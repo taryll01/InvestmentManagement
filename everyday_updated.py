@@ -77,11 +77,8 @@ for col in ['Sector', 'Country', 'Type', 'SecurityName', 'Shares']:
         if len(match_value) > 0:
             merged_df.loc[idx, col] = match_value[0]
 
-#merged_df = merged_df.drop(merged_df.index[:32])
-#merged_df = merged_df.iloc[32:]
-#merged_df = merged_df.tail(len(merged_df) - 32)
 merged_df = merged_df.drop(merged_df.index[:32])
-#print(merged_df)
+
 # Create a new DataFrame
 updated_today = pd.DataFrame()
 
