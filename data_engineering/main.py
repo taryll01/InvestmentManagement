@@ -27,4 +27,6 @@ session = db_func.Session(engine)
 df_securities = db_func.read_security_master(orm_session=session, orm_engine=engine)
 df_eod = yf_func.fetch_latest_data(df_securities['Ticker'].tolist(), df_securities['SecID'].tolist())
 
+# to do historical
+
 db_func.write_dataframe_to_marketdata(df_eod,session,engine)
