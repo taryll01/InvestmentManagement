@@ -1,0 +1,11 @@
+pytest
+requests
+pytest-mock
+pytest-env
+requests_mock
+black
+pyodbc
+yfinance
+sqlalchemy
+flake8
+isort
