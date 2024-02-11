@@ -3,7 +3,6 @@ import yfinance as yf
 msft = yf.Ticker("AAPL")
 
 
-
 msft.income_stmt
 msft.balance_sheet
 msft.cashflow
