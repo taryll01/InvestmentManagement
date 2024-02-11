@@ -1,12 +1,10 @@
 from financetoolkit import Toolkit
-import pandas as pd
 
-
-tickers = ['AAPL', 'MSFT']
+tickers = ["AAPL", "MSFT"]
 api_key = "eaa83187bd18f51cf2c84830f00e89ae"
 
 
-companies = Toolkit(tickers, api_key=api_key,start_date='2016-12-31')
+companies = Toolkit(tickers, api_key=api_key, start_date="2016-12-31")
 
 income_statement = companies.get_income_statement()
 cash_flow_statement = companies.get_cash_flow_statement()
@@ -19,10 +17,3 @@ solvency_ratios = companies.ratios.collect_solvency_ratios()
 
 
 print(operational_ratios)
-
-
-
-
-
-
-

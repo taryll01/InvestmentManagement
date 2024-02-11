@@ -119,3 +119,21 @@ dmypy.json
 *.pytest_cache
 tests/unit/pytest.ini
 *.ini
+
+
+.idea
+.venv/
+.vscode/
+__azurite_db_blob__.json
+__azurite_db_blob_extent__.json
+__azurite_db_queue__.json
+__azurite_db_queue_extent__.json
+__azurite_db_table__.json
+__blobstorage__
+__queuestorage__
+
+# mypy reports
+reports
+reports/mypy
+reports/pytest
+
